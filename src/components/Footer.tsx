@@ -1,0 +1,116 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
+import { Mail, MapPin, Phone, ShieldCheck, ArrowRight, Facebook, Instagram, Linkedin } from 'lucide-react';
+
+export default function Footer() {
+    const t = useTranslations('Footer');
+    const tAreas = useTranslations('Areas');
+    const tServices = useTranslations('Services');
+    const tNav = useTranslations('Navigation');
+
+    const areas = ['spijkenisse', 'hoogvliet', 'hellevoetsluis', 'rockanje', 'brielle'];
+    const services = ['leak', 'clog', 'sanitary', 'pipes', 'maintenance'];
+
+    return (
+        <footer className="bg-slate-950 text-slate-400 py-16 border-t border-white/5 font-sans relative overflow-hidden">
+            {/* Subtle Glow Effect */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[128px] pointer-events-none"></div>
+
+            <div className="container mx-auto px-4 relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+                    {/* Brand & Info */}
+                    <div className="space-y-6">
+                        <div>
+                            <h3 className="text-white text-2xl font-black tracking-tight">Loodgieter Bakker<span className="text-blue-500">.</span></h3>
+                            <p className="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs transition-colors hover:text-slate-300">
+                                Uw betrouwbare partner voor loodgieterswerk en installatie in Spijkenisse en omgeving.
+                                Vakwerk, snel ter plaatse en eerlijke prijzen.
+                            </p>
+                        </div>
+
+                        <div className="flex gap-4">
+                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300" aria-label="Facebook"><Facebook size={18} /></a>
+                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-pink-600 hover:text-white transition-all duration-300" aria-label="Instagram"><Instagram size={18} /></a>
+                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-700 hover:text-white transition-all duration-300" aria-label="LinkedIn"><Linkedin size={18} /></a>
+                        </div>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div className="space-y-6">
+                        <h4 className="text-white font-bold text-lg tracking-wide border-l-2 border-blue-600 pl-3">{tServices('title')}</h4>
+                        <ul className="space-y-3">
+                            {services.map(s => (
+                                <li key={s}>
+                                    <Link href="/diensten" className="group flex items-center gap-2 text-sm hover:text-white transition-colors duration-300">
+                                        <ArrowRight size={12} className="text-blue-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                                        <span className="group-hover:translate-x-1 transition-transform">{tServices(s)}</span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Areas */}
+                    <div className="space-y-6">
+                        <h4 className="text-white font-bold text-lg tracking-wide border-l-2 border-blue-600 pl-3">{tAreas('title')}</h4>
+                        <ul className="space-y-3">
+                            {areas.map(area => (
+                                <li key={area}>
+                                    <Link href="/werkgebieden" className="group flex items-center gap-2 text-sm hover:text-white transition-colors duration-300">
+                                        <ArrowRight size={12} className="text-blue-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                                        <span className="group-hover:translate-x-1 transition-transform">{tAreas(area)}</span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Contact & Trust */}
+                    <div className="space-y-6">
+                        <h4 className="text-white font-bold text-lg tracking-wide border-l-2 border-blue-600 pl-3">Contact & Info</h4>
+
+                        <div className="space-y-3">
+                            <a href="tel:0640755336" className="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all group">
+                                <div className="bg-blue-600/20 p-2 rounded-lg text-blue-500 group-hover:text-blue-400 group-hover:bg-blue-500/20 transition-colors">
+                                    <Phone size={18} />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider font-bold text-slate-500 group-hover:text-blue-400 transition-colors">Bel Direct</span>
+                                    <span className="text-white font-bold">06-40755336</span>
+                                </div>
+                            </a>
+
+                            <div className="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/5">
+                                <div className="bg-slate-800 p-2 rounded-lg text-slate-400">
+                                    <ShieldCheck size={18} />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider font-bold text-slate-500">{t('kvk')}</span>
+                                    <span className="text-white font-mono text-sm">83081984</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pt-2">
+                            <Link href="/contact" className="block w-full bg-blue-600 hover:bg-blue-500 text-white text-center py-3 rounded-xl font-bold transition-all hover:shadow-lg hover:shadow-blue-600/20 active:scale-[0.98]">
+                                {tNav('contact')}
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                    <p>&copy; {new Date().getFullYear()} Loodgieter Bakker. <span className="hidden md:inline">Dutch quality & craftsmanship.</span></p>
+                    <div className="flex justify-center gap-6">
+                        <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+                        <Link href="/privacy" className="hover:text-white transition-colors">Algemene voorwaarden</Link>
+                        <Link href="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}

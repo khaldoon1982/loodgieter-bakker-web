@@ -1,0 +1,57 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "areas": "Service Areas",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "Header": {
+        "call": "Call Direct"
+    },
+    "Hero": {
+        "title": "Loodgieter Bakker – Plumber & Installation in Spijkenisse and surroundings",
+        "trust": "Fast service • Clear pricing • Quality work",
+        "cta_call": "Call Direct",
+        "cta_quote": "Request Quote"
+    },
+    "Services": {
+        "title": "Our Services",
+        "leak": "Leak repair",
+        "clog": "Unclogging",
+        "sanitary": "Sanitary installation",
+        "pipes": "Pipes & Drainage",
+        "maintenance": "Installation & Maintenance"
+    },
+    "Areas": {
+        "title": "Service Areas",
+        "spijkenisse": "Spijkenisse",
+        "hoogvliet": "Hoogvliet",
+        "hellevoetsluis": "Hellevoetsluis",
+        "rockanje": "Rockanje",
+        "brielle": "Brielle"
+    },
+    "Reviews": {
+        "title": "What customers say"
+    },
+    "FAQ": {
+        "title": "Frequently Asked Questions"
+    },
+    "Contact": {
+        "title": "Contact Us",
+        "form": {
+            "name": "Name",
+            "email": "E-mail",
+            "phone": "Phone Number",
+            "city": "City",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send",
+            "success": "Thank you for your message! We will contact you as soon as possible."
+        }
+    },
+    "Footer": {
+        "contact": "Contact Details",
+        "kvk": "Chamber of Commerce"
+    }
+}

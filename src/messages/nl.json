@@ -1,0 +1,57 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Diensten",
+        "areas": "Werkgebieden",
+        "about": "Over ons",
+        "contact": "Contact"
+    },
+    "Header": {
+        "call": "Bel direct"
+    },
+    "Hero": {
+        "title": "Loodgieter Bakker – Loodgieter & Installatie in Spijkenisse en omgeving",
+        "trust": "Snel ter plaatse • Duidelijke prijsafspraak • Vakwerk",
+        "cta_call": "Bel direct",
+        "cta_quote": "Offerte aanvragen"
+    },
+    "Services": {
+        "title": "Onze Diensten",
+        "leak": "Lekkage verhelpen",
+        "clog": "Verstopping verhelpen",
+        "sanitary": "Sanitair plaatsen/vervangen",
+        "pipes": "Waterleidingen & afvoer",
+        "maintenance": "Installatie & onderhoud"
+    },
+    "Areas": {
+        "title": "Werkgebieden",
+        "spijkenisse": "Spijkenisse",
+        "hoogvliet": "Hoogvliet",
+        "hellevoetsluis": "Hellevoetsluis",
+        "rockanje": "Rockanje",
+        "brielle": "Brielle"
+    },
+    "Reviews": {
+        "title": "Wat klanten zeggen"
+    },
+    "FAQ": {
+        "title": "Veelgestelde vragen"
+    },
+    "Contact": {
+        "title": "Contact opnemen",
+        "form": {
+            "name": "Naam",
+            "email": "E-mail",
+            "phone": "Telefoonnummer",
+            "city": "Woonplaats",
+            "subject": "Onderwerp",
+            "message": "Bericht",
+            "submit": "Versturen",
+            "success": "Bedankt voor uw bericht! Wij nemen zo spoedig mogelijk contact op."
+        }
+    },
+    "Footer": {
+        "contact": "Contactgegevens",
+        "kvk": "KVK"
+    }
+}
