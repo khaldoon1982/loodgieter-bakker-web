@@ -250,79 +250,113 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </section>
 
             {/* Reviews - Trust Wall */}
-            <section className="py-32 bg-white relative">
-                <div className="container mx-auto px-4">
+            <section className="py-32 bg-white relative overflow-hidden">
+                {/* Subtle Background Pattern */}
+                <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:20px_20px] opacity-70"></div>
+
+                <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center mb-20">
-                        <div className="inline-flex items-center justify-center gap-1.5 text-yellow-500 mb-6 bg-yellow-50 px-6 py-2 rounded-full">
-                            <Star size={20} fill="currentColor" />
-                            <Star size={20} fill="currentColor" />
-                            <Star size={20} fill="currentColor" />
-                            <Star size={20} fill="currentColor" />
-                            <Star size={20} fill="currentColor" />
-                            <span className="ml-2 font-black text-yellow-700 tracking-wide">9.8 OP GOOGLE</span>
+                        <div className="inline-flex items-center justify-center gap-2 text-yellow-600 mb-6 bg-yellow-100/80 px-6 py-2 rounded-full border border-yellow-200 shadow-sm backdrop-blur-sm">
+                            <div className="flex gap-0.5">
+                                <Star size={16} fill="currentColor" className="text-yellow-500" />
+                                <Star size={16} fill="currentColor" className="text-yellow-500" />
+                                <Star size={16} fill="currentColor" className="text-yellow-500" />
+                                <Star size={16} fill="currentColor" className="text-yellow-500" />
+                                <Star size={16} fill="currentColor" className="text-yellow-500" />
+                            </div>
+                            <span className="font-bold text-sm tracking-wide">EXCELLENT OP GOOGLE</span>
                         </div>
-                        <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-6">{tReviews('title')}</h2>
-                        <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-                            Wij gaan voor niets minder dan 100% tevredenheid. Lees de ervaringen van onze klanten.
+                        <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">{tReviews('title')}</h2>
+                        <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                            Wij gaan voor niets minder dan 100% tevredenheid. Onze klanten waarderen onze snelheid, vakmanschap en eerlijke communicatie.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {reviews.map((review: Review) => (
-                            <div key={review.id} className="bg-slate-50 p-8 rounded-[2rem] hover:bg-white border border-slate-100 hover:border-blue-100 shadow-sm hover:shadow-[0_10px_40px_-15px_rgba(37,99,235,0.15)] transition-all duration-300 group">
-                                <div className="flex gap-1 text-yellow-400 mb-6">
+                            <div key={review.id} className="bg-white p-8 rounded-[2rem] border border-slate-100 hover:border-blue-200 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(37,99,235,0.1)] transition-all duration-300 group hover:-translate-y-1">
+                                <div className="flex gap-1 text-yellow-400 mb-6 group-hover:scale-105 transition-transform origin-left">
                                     {[...Array(review.rating)].map((_, i) => <Star key={i} size={18} fill="currentColor" />)}
                                 </div>
                                 <h4 className="font-bold text-lg text-slate-900 mb-3 line-clamp-1">{review.name}</h4>
                                 <div className="relative">
-                                    <Quote size={40} className="absolute -top-2 -left-2 text-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <Quote size={40} className="absolute -top-3 -left-3 text-blue-50 opacity-0 group-hover:opacity-100 transition-all duration-300 scale-50 group-hover:scale-100" />
                                     <p className="text-slate-600 leading-relaxed relative z-10 italic">
                                         "{review.text}"
                                     </p>
                                 </div>
-                                <div className="mt-8 pt-6 border-t border-slate-200/60 flex items-center justify-between text-xs font-semibold text-slate-400 uppercase tracking-wider">
-                                    <span className="flex items-center gap-1"><CheckCircle2 size={14} className="text-green-500" /> Geverifieerd</span>
+                                <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                                    <span className="flex items-center gap-1.5 text-green-600 bg-green-50 px-2 py-1 rounded-md"><CheckCircle2 size={12} /> Geverifieerd</span>
                                     <span>{new Date(review.createdAt).toLocaleDateString()}</span>
                                 </div>
                             </div>
                         ))}
                         {reviews.length === 0 && (
-                            <div className="col-span-3 text-center py-20 bg-slate-50 rounded-[2.5rem] border border-dashed border-slate-200">
-                                <MessageCircle size={48} className="mx-auto text-slate-300 mb-4" />
-                                <p className="text-slate-400 font-medium">Nog geen reviews beschikbaar.</p>
+                            <div className="col-span-3">
+                                <div className="max-w-md mx-auto bg-white p-10 rounded-[2.5rem] border-2 border-dashed border-slate-200 text-center relative overflow-hidden group hover:border-blue-300 transition-colors">
+                                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                                        <MessageCircle size={120} className="rotate-12" />
+                                    </div>
+                                    <div className="relative z-10">
+                                        <div className="w-16 h-16 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                            <Sparkles size={32} />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-slate-900 mb-2">Wees de eerste!</h3>
+                                        <p className="text-slate-500 mb-8">
+                                            Heeft u gebruik gemaakt van onze diensten? Laat een review achter en deel uw ervaring.
+                                        </p>
+                                        <a href="#" className="inline-flex items-center gap-2 text-white bg-blue-600 px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 active:scale-95">
+                                            Schrijf een review
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>
                 </div>
             </section>
 
-            {/* FAQ - Refined */}
-            <section className="py-24 bg-slate-50 border-t border-slate-200">
-                <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="text-center mb-16">
-                        <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Vragen & Antwoorden</span>
-                        <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-6">{tFAQ('title')}</h2>
-                    </div>
+            {/* FAQ - Refined Split Layout */}
+            <section className="py-24 bg-slate-50/50 border-t border-slate-200 relative">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+                        {/* Left Column: Title & Sticky CTA */}
+                        <div className="w-full lg:w-1/3 lg:sticky lg:top-32 h-fit">
+                            <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-4 block">Vragen & Antwoorden</span>
+                            <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight">{tFAQ('title')}</h2>
+                            <p className="text-slate-600 text-lg mb-8 leading-relaxed">
+                                Veelvoorkomende vragen over onze diensten, tarieven en werkwijze.
+                            </p>
 
-                    <div className="space-y-4">
-                        {faqs.map((faq: { id: string, question: string, answer: string }) => (
-                            <div key={faq.id} className="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-200 overflow-hidden">
-                                <FAQAccordion question={faq.question} answer={faq.answer} />
+                            <div className="bg-white p-8 rounded-3xl shadow-lg shadow-blue-900/5 border border-blue-50">
+                                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+                                    <MessageCircle size={24} />
+                                </div>
+                                <h3 className="font-bold text-xl text-slate-900 mb-2">Andere vraag?</h3>
+                                <p className="text-slate-500 mb-6">Staat uw vraag er niet tussen? Neem gerust contact met ons op.</p>
+                                <Link href="/contact" className="block w-full text-center bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-slate-800 transition-colors">
+                                    Stel uw vraag
+                                </Link>
                             </div>
-                        ))}
-                        {faqs.length === 0 && (
-                            <div className="text-center py-10">
-                                <Sparkles size={32} className="mx-auto text-blue-300 mb-3" />
-                                <p className="text-slate-400">FAQ wordt geladen...</p>
-                            </div>
-                        )}
-                    </div>
+                        </div>
 
-                    <div className="mt-16 text-center">
-                        <p className="text-slate-500 mb-4">Staat uw vraag er niet tussen?</p>
-                        <Link href="/contact" className="text-blue-600 font-bold hover:underline">
-                            Neem contact met ons op
-                        </Link>
+                        {/* Right Column: Accordions */}
+                        <div className="w-full lg:w-2/3 space-y-4">
+                            {faqs.map((faq: { id: string, question: string, answer: string }) => (
+                                <div key={faq.id} className="bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300 overflow-hidden group">
+                                    <FAQAccordion question={faq.question} answer={faq.answer} />
+                                </div>
+                            ))}
+                            {faqs.length === 0 && (
+                                <div className="text-center py-16 bg-white rounded-3xl border border-dashed border-slate-200">
+                                    <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                                        <Sparkles size={32} className="text-slate-300" />
+                                    </div>
+                                    <p className="text-slate-400 font-medium">Veelgestelde vragen worden geladen...</p>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </section>

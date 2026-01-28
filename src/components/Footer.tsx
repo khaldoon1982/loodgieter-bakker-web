@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 import { Mail, MapPin, Phone, ShieldCheck, ArrowRight, Facebook, Instagram, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     const t = useTranslations('Footer');
@@ -23,18 +24,31 @@ export default function Footer() {
 
                     {/* Brand & Info */}
                     <div className="space-y-6">
-                        <div>
-                            <h3 className="text-white text-2xl font-black tracking-tight">Loodgieter Bakker<span className="text-blue-500">.</span></h3>
-                            <p className="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs transition-colors hover:text-slate-300">
-                                Uw betrouwbare partner voor loodgieterswerk en installatie in Spijkenisse en omgeving.
-                                Vakwerk, snel ter plaatse en eerlijke prijzen.
-                            </p>
-                        </div>
+                        <Link href="/" className="inline-flex items-center gap-3 group">
+                            <div className="relative w-12 h-12 transition-transform duration-300 group-hover:scale-105">
+                                <Image
+                                    src="/Loodgieter.svg"
+                                    alt="Loodgieter Bakker"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="flex flex-col justify-center">
+                                <span className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] leading-tight group-hover:text-blue-500 transition-colors">Loodgieter</span>
+                                <span className="text-xl font-black text-white tracking-tight leading-none group-hover:text-slate-200 transition-colors">
+                                    Bakker<span className="text-blue-500">.</span>
+                                </span>
+                            </div>
+                        </Link>
+                        <p className="text-slate-400 leading-relaxed max-w-xs text-sm">
+                            Uw betrouwbare partner voor loodgieterswerk en installatie in Spijkenisse en omgeving.
+                            Vakwerk, snel ter plaatse en eerlijke prijzen.
+                        </p>
 
-                        <div className="flex gap-4">
-                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300" aria-label="Facebook"><Facebook size={18} /></a>
-                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-pink-600 hover:text-white transition-all duration-300" aria-label="Instagram"><Instagram size={18} /></a>
-                            <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-700 hover:text-white transition-all duration-300" aria-label="LinkedIn"><Linkedin size={18} /></a>
+                        <div className="flex gap-4 pt-2">
+                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-500 transition-all duration-300 shadow-lg shadow-black/20" aria-label="Facebook"><Facebook size={18} /></a>
+                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-pink-600 hover:border-pink-500 transition-all duration-300 shadow-lg shadow-black/20" aria-label="Instagram"><Instagram size={18} /></a>
+                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 shadow-lg shadow-black/20" aria-label="LinkedIn"><Linkedin size={18} /></a>
                         </div>
                     </div>
 
