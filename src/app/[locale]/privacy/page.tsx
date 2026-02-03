@@ -14,16 +14,16 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                 <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 prose prose-slate prose-blue max-w-none">
                     <h1>Privacyverklaring</h1>
                     <p className="lead">
-                        Loodgieter Bakker hecht veel waarde aan de bescherming van uw persoonsgegevens.
+                        Loodgieter Bakr hecht veel waarde aan de bescherming van uw persoonsgegevens.
                         In deze privacyverklaring leggen wij uit hoe wij omgaan met uw gegevens.
                     </p>
 
                     <h3>Contactgegevens</h3>
                     <p>
-                        Loodgieter Bakker<br />
+                        Loodgieter Bakr<br />
                         Fakkelgras 31, 3206JE Spijkenisse<br />
                         KVK: 83081984<br />
-                        <a href="mailto:info@loodgieterbakker.nl">info@loodgieterbakker.nl</a>
+                        <a href="mailto:info@loodgieterbakr.nl">info@loodgieterbakr.nl</a>
                     </p>
 
                     <h3>Persoonsgegevens die wij verwerken</h3>
@@ -46,14 +46,14 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
 
                     <h3>Delen van gegevens</h3>
                     <p>
-                        Loodgieter Bakker verkoopt uw gegevens niet aan derden en verstrekt deze uitsluitend indien dit nodig is
+                        Loodgieter Bakr verkoopt uw gegevens niet aan derden en verstrekt deze uitsluitend indien dit nodig is
                         voor de uitvoering van onze overeenkomst met u of om te voldoen aan een wettelijke verplichting.
                     </p>
 
                     <h3>Gegevens inzien, aanpassen of verwijderen</h3>
                     <p>
                         U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen.
-                        Neem hiervoor contact op via info@loodgieterbakker.nl.
+                        Neem hiervoor contact op via info@loodgieterbakr.nl.
                     </p>
                 </div>
             </main>

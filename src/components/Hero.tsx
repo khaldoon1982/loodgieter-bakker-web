@@ -41,7 +41,7 @@ export default function Hero() {
                 >
                     <Image
                         src="/hero-bg-v2.png"
-                        alt="Loodgieter Bakker"
+                        alt="Loodgieter Bakr"
                         fill
                         className="object-cover object-center"
                         priority
@@ -68,7 +68,7 @@ export default function Hero() {
 
                         {/* Headline - Punchy & Clear */}
                         <motion.h1 variants={item} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight text-white drop-shadow-lg">
-                            Loodgieter <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Bakker</span>.
+                            Loodgieter <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Bakr</span>.
                             <br />
                             <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl opacity-90 font-bold block mt-2">
                                 Uw specialist in <span className="underline decoration-blue-500 underline-offset-4 decoration-4">Spijkenisse</span>

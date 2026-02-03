@@ -28,7 +28,7 @@ export default function Footer() {
                             <div className="relative w-12 h-12 transition-transform duration-300 group-hover:scale-105">
                                 <Image
                                     src="/Loodgieter.svg"
-                                    alt="Loodgieter Bakker"
+                                    alt="Loodgieter Bakr"
                                     fill
                                     className="object-contain"
                                 />
@@ -36,7 +36,7 @@ export default function Footer() {
                             <div className="flex flex-col justify-center">
                                 <span className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] leading-tight group-hover:text-blue-500 transition-colors">Loodgieter</span>
                                 <span className="text-xl font-black text-white tracking-tight leading-none group-hover:text-slate-200 transition-colors">
-                                    Bakker<span className="text-blue-500">.</span>
+                                    Bakr<span className="text-blue-500">.</span>
                                 </span>
                             </div>
                         </Link>
@@ -117,7 +117,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                    <p>&copy; {new Date().getFullYear()} Loodgieter Bakker. <span className="hidden md:inline">Dutch quality & craftsmanship.</span></p>
+                    <p>&copy; {new Date().getFullYear()} Loodgieter Bakr. <span className="hidden md:inline">Dutch quality & craftsmanship.</span></p>
                     <div className="flex justify-center gap-6">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
                         <Link href="/privacy" className="hover:text-white transition-colors">Algemene voorwaarden</Link>

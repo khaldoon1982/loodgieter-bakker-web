@@ -5,7 +5,7 @@ import { Link } from '@/navigation';
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Onze Diensten - Loodgieter Bakker',
+    title: 'Onze Diensten - Loodgieter Bakr',
     description: 'Bekijk onze loodgietersdiensten: lekkage, verstopping, sanitair, en meer.',
 };
 
@@ -135,7 +135,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 
                                     {/* Badge */}
                                     <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg text-white font-medium text-sm">
-                                        Loodgieter Bakker Kwaliteit
+                                        Loodgieter Bakr Kwaliteit
                                     </div>
                                 </div>
                             </div>

@@ -2,12 +2,12 @@ export default function JsonLd() {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Plumber",
-        "name": "Loodgieter Bakker",
-        "image": "https://loodgieterbakker.nl/opengraph-image.png",
-        "@id": "https://loodgieterbakker.nl",
-        "url": "https://loodgieterbakker.nl",
+        "name": "Loodgieter Bakr",
+        "image": "https://loodgieterbakr.nl/opengraph-image.png",
+        "@id": "https://loodgieterbakr.nl",
+        "url": "https://loodgieterbakr.nl",
         "telephone": "0640755336",
-        "email": "info@loodgieterbakker.nl",
+        "email": "info@loodgieterbakr.nl",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Fakkelgras 31",

@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/navigation';
 
 export const metadata = {
-    title: 'Contact - Loodgieter Bakker',
-    description: 'Neem contact op met Loodgieter Bakker in Spijkenisse voor al uw loodgieterswerk. 24/7 bereikbaar.',
+    title: 'Contact - Loodgieter Bakr',
+    description: 'Neem contact op met Loodgieter Bakr in Spijkenisse voor al uw loodgieterswerk. 24/7 bereikbaar.',
 };
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -57,13 +57,13 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                             </a>
 
                             {/* Email */}
-                            <a href="mailto:info@loodgieterbakker.nl" className="group bg-white p-6 rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-cyan-200/50 flex items-center gap-6">
+                            <a href="mailto:info@loodgieterbakr.nl" className="group bg-white p-6 rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-cyan-200/50 flex items-center gap-6">
                                 <div className="w-16 h-16 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
                                     <Mail size={28} />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-slate-400 text-xs uppercase tracking-wider mb-1">E-mail ons</h3>
-                                    <p className="text-xl font-bold text-slate-900 group-hover:text-cyan-600 transition-colors break-all">info@loodgieterbakker.nl</p>
+                                    <p className="text-xl font-bold text-slate-900 group-hover:text-cyan-600 transition-colors break-all">info@loodgieterbakr.nl</p>
                                     <span className="text-slate-400 text-xs mt-1 inline-block">Reactie binnen 24u</span>
                                 </div>
                             </a>
@@ -75,10 +75,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-slate-400 text-xs uppercase tracking-wider mb-1">Bezoekadres</h3>
-                                    <p className="text-lg font-bold text-slate-900">Loodgieter Bakker</p>
+                                    <p className="text-lg font-bold text-slate-900">Loodgieter Bakr</p>
                                     <p className="text-slate-600">Fakkelgras 31</p>
                                     <p className="text-slate-600">3206 JE Spijkenisse</p>
-                                    <a href="https://maps.google.com/?q=Loodgieter+Bakker+Spijkenisse" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-blue-600 font-bold text-sm mt-3 hover:underline">
+                                    <a href="https://maps.google.com/?q=Loodgieter+Bakr+Spijkenisse" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-blue-600 font-bold text-sm mt-3 hover:underline">
                                         Routebeschrijving <ArrowRight size={14} />
                                     </a>
                                 </div>

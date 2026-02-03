@@ -40,7 +40,7 @@ export default function Header({ locale }: { locale: string }) {
                     <div className="relative w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-105 group-hover:rotate-6">
                         <Image
                             src="/Loodgieter.svg"
-                            alt="Loodgieter Bakker"
+                            alt="Loodgieter Bakr"
                             fill
                             className="object-contain drop-shadow-lg"
                             priority
@@ -50,7 +50,7 @@ export default function Header({ locale }: { locale: string }) {
                     <div className="flex flex-col justify-center">
                         <span className="text-xs md:text-sm font-bold text-slate-400 uppercase tracking-[0.2em] leading-tight group-hover:text-blue-400 transition-colors">Loodgieter</span>
                         <span className="text-xl md:text-3xl font-black text-white tracking-tight leading-none group-hover:text-slate-200 transition-colors">
-                            Bakker<span className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-400 to-cyan-400">.</span>
+                            Bakr<span className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-400 to-cyan-400">.</span>
                         </span>
                     </div>
                 </Link>

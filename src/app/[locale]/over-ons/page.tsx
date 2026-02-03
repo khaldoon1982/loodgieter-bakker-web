@@ -5,8 +5,8 @@ import { Link } from '@/navigation';
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Over Ons - Loodgieter Bakker',
-    description: 'Leer meer over Loodgieter Bakker, uw vakkundige specialist in Spijkenisse voor loodgieterswerk, installatie en onderhoud.',
+    title: 'Over Ons - Loodgieter Bakr',
+    description: 'Leer meer over Loodgieter Bakr, uw vakkundige specialist in Spijkenisse voor loodgieterswerk, installatie en onderhoud.',
 };
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -44,7 +44,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                             <div className="w-full md:w-1/2 space-y-6">
                                 <h2 className="text-3xl font-bold text-slate-900">Uw specialist in Spijkenisse</h2>
                                 <p className="text-slate-600 leading-relaxed text-lg">
-                                    Loodgieter Bakker is een vakkundig en betrouwbaar loodgietersbedrijf gevestigd in Spijkenisse.
+                                    Loodgieter Bakr is een vakkundig en betrouwbaar loodgietersbedrijf gevestigd in Spijkenisse.
                                     Opgericht door <strong className="text-slate-900">Jwan Bakr</strong>, streven wij naar perfectie in elk project, groot of klein.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed text-lg">
@@ -65,7 +65,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-slate-800 flex items-center justify-center p-8 text-center text-white">
                                         <div>
                                             <Wrench size={64} className="mx-auto mb-4 opacity-80" />
-                                            <h3 className="text-2xl font-bold">Loodgieter Bakker</h3>
+                                            <h3 className="text-2xl font-bold">Loodgieter Bakr</h3>
                                             <p className="opacity-75 mt-2">Kwaliteit sinds 2021</p>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                                 <div className="space-y-4">
                                     <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex items-center justify-between">
                                         <span>Handelsnaam</span>
-                                        <span className="font-bold text-white">Loodgieter Bakker</span>
+                                        <span className="font-bold text-white">Loodgieter Bakr</span>
                                     </div>
                                     <div className="bg-white/5 p-4 rounded-xl border border-white/5 flex items-center justify-between">
                                         <span>KVK Nummer</span>

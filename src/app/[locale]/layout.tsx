@@ -9,7 +9,7 @@ import JsonLd from '@/components/JsonLd';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-    title: 'Loodgieter Bakker - Loodgieter & Installatie',
+    title: 'Loodgieter Bakr - Loodgieter & Installatie',
     description: 'Specialist in lekkage, verstopping, sanitair en onderhoud in Spijkenisse en omgeving.',
 };
 

@@ -4,8 +4,8 @@ import { MapPin, ArrowRight, ExternalLink, CheckCircle2 } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 
 export const metadata = {
-    title: 'Werkgebieden - Loodgieter Bakker',
-    description: 'Bekijk onze werkgebieden. Loodgieter Bakker is actief in Spijkenisse, Hoogvliet, Hellevoetsluis, Rockanje en Brielle.',
+    title: 'Werkgebieden - Loodgieter Bakr',
+    description: 'Bekijk onze werkgebieden. Loodgieter Bakr is actief in Spijkenisse, Hoogvliet, Hellevoetsluis, Rockanje en Brielle.',
 };
 
 export default async function AreasPage({ params }: { params: Promise<{ locale: string }> }) {

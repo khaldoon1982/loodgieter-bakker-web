@@ -16,9 +16,9 @@ export default function TopBar() {
                         <span className="tracking-wide">06-40755336</span>
                     </a>
 
-                    <a href="mailto:info@loodgieterbakker.nl" className="flex items-center gap-2 hover:text-yellow-200 transition-colors duration-200 group">
+                    <a href="mailto:info@loodgieterbakr.nl" className="flex items-center gap-2 hover:text-yellow-200 transition-colors duration-200 group">
                         <Mail size={16} className="group-hover:scale-110 transition-transform" />
-                        <span>info@loodgieterbakker.nl</span>
+                        <span>info@loodgieterbakr.nl</span>
                     </a>
                 </div>
 

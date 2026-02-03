@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://loodgieterbakker.nl';
+    const baseUrl = 'https://loodgieterbakr.nl';
 
     // Static routes for NL and EN
     const routes = ['', '/diensten', '/werkgebieden', '/over-ons', '/contact', '/privacy'];
