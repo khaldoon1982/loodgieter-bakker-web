@@ -5,6 +5,7 @@ import { locales } from '@/config';
 import { Inter } from 'next/font/google';
 import "../globals.css";
 import JsonLd from '@/components/JsonLd';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -39,7 +40,21 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
+
             <body className={inter.className + " bg-slate-50 text-slate-900"}>
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-17945482469"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'AW-17945482469');
+                    `}
+                </Script>
                 <NextIntlClientProvider messages={messages}>
                     <div className="flex flex-col min-h-screen">
                         <TopBar />
