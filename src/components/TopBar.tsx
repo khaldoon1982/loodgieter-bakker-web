@@ -1,4 +1,4 @@
-import { Mail, Phone, Facebook, Instagram, Linkedin, Clock, Star } from 'lucide-react';
+import { Mail, Phone, Clock, Star, MessageCircle } from 'lucide-react';
 
 export default function TopBar() {
     return (
@@ -16,9 +16,9 @@ export default function TopBar() {
                         <span className="tracking-wide">06-40755336</span>
                     </a>
 
-                    <a href="mailto:info@loodgieterbakr.nl" className="flex items-center gap-2 hover:text-yellow-200 transition-colors duration-200 group">
+                    <a href="mailto:support@loodgieterbakr.nl" className="flex items-center gap-2 hover:text-yellow-200 transition-colors duration-200 group">
                         <Mail size={16} className="group-hover:scale-110 transition-transform" />
-                        <span>info@loodgieterbakr.nl</span>
+                        <span>support@loodgieterbakr.nl</span>
                     </a>
                 </div>
 
@@ -36,14 +36,9 @@ export default function TopBar() {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <a href="#" className="p-2 bg-white/20 hover:bg-white text-white hover:text-blue-600 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5" aria-label="Facebook">
-                            <Facebook size={16} />
-                        </a>
-                        <a href="#" className="p-2 bg-white/20 hover:bg-white text-white hover:text-pink-600 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5" aria-label="Instagram">
-                            <Instagram size={16} />
-                        </a>
-                        <a href="#" className="p-2 bg-white/20 hover:bg-white text-white hover:text-blue-700 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5" aria-label="LinkedIn">
-                            <Linkedin size={16} />
+                        <a href="https://wa.me/31640755336" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5 group">
+                            <MessageCircle size={16} className="text-white fill-current" />
+                            <span className="font-bold text-xs tracking-wide group-hover:text-white">WhatsApp: 0640755336</span>
                         </a>
                     </div>
                 </div>

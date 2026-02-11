@@ -7,7 +7,7 @@ export default function JsonLd() {
         "@id": "https://loodgieterbakr.nl",
         "url": "https://loodgieterbakr.nl",
         "telephone": "0640755336",
-        "email": "info@loodgieterbakr.nl",
+        "email": "support@loodgieterbakr.nl",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Fakkelgras 31",
@@ -31,15 +31,15 @@ export default function JsonLd() {
                     "Friday"
                 ],
                 "opens": "08:00",
-                "closes": "18:00"
+                "closes": "20:00"
             },
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
-                    "Saturday",
-                    "Sunday"
+                    "Saturday"
                 ],
-                "description": "Emergency only"
+                "opens": "08:00",
+                "closes": "17:00"
             }
         ],
         "priceRange": "$$",

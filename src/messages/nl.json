@@ -29,7 +29,22 @@
         "hoogvliet": "Hoogvliet",
         "hellevoetsluis": "Hellevoetsluis",
         "rockanje": "Rockanje",
-        "brielle": "Brielle"
+        "brielle": "Brielle",
+        "heenvliet": "Heenvliet",
+        "rhoon": "Rhoon",
+        "poortugaal": "Poortugaal",
+        "geervliet": "Geervliet",
+        "rozenburg": "Rozenburg",
+        "spijkenisse_desc": "Onze thuisbasis. Hier zijn wij het snelst ter plaatse (vaak < 30 min) voor alle loodgieterswerkzaamheden.",
+        "hoogvliet_desc": "Dagelijks actief in Hoogvliet voor CV-ketel onderhoud, verstoppingen en badkamer renovaties.",
+        "hellevoetsluis_desc": "Van de vesting tot de nieuwbouw, wij kennen de woningen en leidingnetwerken in Hellevoetsluis.",
+        "rockanje_desc": "Ook voor recreatiewoningen en vaste bewoners in Rockanje staan wij klaar met vakkundige service.",
+        "brielle_desc": "Specialist in het renoveren van sanitair en leidingwerk in de historische panden van Brielle.",
+        "heenvliet_desc": "Ook in het historische Heenvliet staan wij voor u klaar met vakkundig loodgieterswerk en onderhoud.",
+        "rhoon_desc": "Van Rhoon-Dorp tot Portland, wij verhelpen snel uw lekkage of CV-storing in de gehele regio.",
+        "poortugaal_desc": "Woont u in Poortugaal? Bel ons voor professionele installatie en reparatie van uw sanitair.",
+        "geervliet_desc": "Directe service in Geervliet. Wij zijn snel ter plaatse voor al uw loodgietersklussen.",
+        "rozenburg_desc": "Snelle service via de Calandbrug of tunnel. Wij helpen u bij lekkage en verstopping."
     },
     "Reviews": {
         "title": "Wat klanten zeggen"

@@ -23,7 +23,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                         Loodgieter Bakr<br />
                         Fakkelgras 31, 3206JE Spijkenisse<br />
                         KVK: 83081984<br />
-                        <a href="mailto:info@loodgieterbakr.nl">info@loodgieterbakr.nl</a>
+                        <a href="mailto:support@loodgieterbakr.nl">support@loodgieterbakr.nl</a>
                     </p>
 
                     <h3>Persoonsgegevens die wij verwerken</h3>
@@ -53,7 +53,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                     <h3>Gegevens inzien, aanpassen of verwijderen</h3>
                     <p>
                         U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen.
-                        Neem hiervoor contact op via info@loodgieterbakr.nl.
+                        Neem hiervoor contact op via support@loodgieterbakr.nl.
                     </p>
                 </div>
             </main>

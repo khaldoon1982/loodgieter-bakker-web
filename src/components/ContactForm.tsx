@@ -49,29 +49,29 @@ export default function ContactForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-bold text-slate-700">{t('name')} *</label>
-                        <input required name="name" id="name" type="text" placeholder="Uw naam" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400 bg-slate-50/50 focus:bg-white" />
+                        <input required name="name" id="name" type="text" placeholder="Uw naam" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-500 text-slate-900 font-medium bg-slate-50/50 focus:bg-white" />
                     </div>
                     <div className="space-y-2">
                         <label htmlFor="phone" className="text-sm font-bold text-slate-700">{t('phone')} *</label>
-                        <input required name="phone" id="phone" type="tel" placeholder="06 12345678" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400 bg-slate-50/50 focus:bg-white" />
+                        <input required name="phone" id="phone" type="tel" placeholder="06 12345678" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-500 text-slate-900 font-medium bg-slate-50/50 focus:bg-white" />
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-bold text-slate-700">{t('email')} *</label>
-                        <input required name="email" id="email" type="email" placeholder="uw@email.nl" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400 bg-slate-50/50 focus:bg-white" />
+                        <input required name="email" id="email" type="email" placeholder="uw@email.nl" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-500 text-slate-900 font-medium bg-slate-50/50 focus:bg-white" />
                     </div>
                     <div className="space-y-2">
                         <label htmlFor="city" className="text-sm font-bold text-slate-700">{t('city')}</label>
-                        <input name="city" id="city" type="text" placeholder="Bijv. Spijkenisse" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400 bg-slate-50/50 focus:bg-white" />
+                        <input name="city" id="city" type="text" placeholder="Bijv. Spijkenisse" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-500 text-slate-900 font-medium bg-slate-50/50 focus:bg-white" />
                     </div>
                 </div>
 
                 <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-bold text-slate-700">{t('subject')}</label>
                     <div className="relative">
-                        <select name="subject" id="subject" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50/50 focus:bg-white appearance-none cursor-pointer">
+                        <select name="subject" id="subject" className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50/50 focus:bg-white appearance-none cursor-pointer text-slate-900 font-medium">
                             <option value="Lekkage">Lekkage</option>
                             <option value="Verstopping">Verstopping</option>
                             <option value="Sanitair">Sanitair</option>
@@ -87,7 +87,7 @@ export default function ContactForm() {
 
                 <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-bold text-slate-700">{t('message')} *</label>
-                    <textarea required name="message" id="message" rows={4} placeholder="Beschrijf uw probleem of vraag..." className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400 bg-slate-50/50 focus:bg-white resize-none"></textarea>
+                    <textarea required name="message" id="message" rows={4} placeholder="Beschrijf uw probleem of vraag..." className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-500 text-slate-900 font-medium bg-slate-50/50 focus:bg-white resize-none"></textarea>
                 </div>
 
                 <input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" />

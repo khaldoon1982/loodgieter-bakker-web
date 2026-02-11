@@ -57,13 +57,13 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                             </a>
 
                             {/* Email */}
-                            <a href="mailto:info@loodgieterbakr.nl" className="group bg-white p-6 rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-cyan-200/50 flex items-center gap-6">
+                            <a href="mailto:support@loodgieterbakr.nl" className="group bg-white p-6 rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-cyan-200/50 flex items-center gap-6">
                                 <div className="w-16 h-16 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
                                     <Mail size={28} />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-slate-400 text-xs uppercase tracking-wider mb-1">E-mail ons</h3>
-                                    <p className="text-xl font-bold text-slate-900 group-hover:text-cyan-600 transition-colors break-all">info@loodgieterbakr.nl</p>
+                                    <p className="text-xl font-bold text-slate-900 group-hover:text-cyan-600 transition-colors break-all">support@loodgieterbakr.nl</p>
                                     <span className="text-slate-400 text-xs mt-1 inline-block">Reactie binnen 24u</span>
                                 </div>
                             </a>
@@ -97,15 +97,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                                     <ul className="space-y-4 text-sm md:text-base">
                                         <li className="flex justify-between border-b border-white/10 pb-2">
                                             <span className="text-slate-400">Maandag - Vrijdag</span>
-                                            <span className="font-bold">08:00 - 18:00</span>
+                                            <span className="font-bold">08:00 - 20:00</span>
                                         </li>
                                         <li className="flex justify-between border-b border-white/10 pb-2">
                                             <span className="text-slate-400">Zaterdag</span>
-                                            <span className="font-bold">09:00 - 17:00</span>
+                                            <span className="font-bold">08:00 - 17:00</span>
                                         </li>
                                         <li className="flex justify-between pt-2">
                                             <span className="text-slate-400">Zondag</span>
-                                            <span className="font-bold text-blue-400">Enkel Spoed</span>
+                                            <span className="font-bold text-blue-400">Gesloten</span>
                                         </li>
                                     </ul>
                                 </div>

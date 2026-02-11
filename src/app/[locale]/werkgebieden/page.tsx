@@ -17,39 +17,63 @@ export default async function AreasPage({ params }: { params: Promise<{ locale: 
     const areas = [
         {
             id: 'spijkenisse',
-            name: 'Spijkenisse',
+            name: t('spijkenisse'),
             active: true,
-            description: 'Onze thuisbasis. Hier zijn wij het snelst ter plaatse (vaak < 30 min) voor alle loodgieterswerkzaamheden.'
+            description: t('spijkenisse_desc')
         },
         {
             id: 'hoogvliet',
-            name: 'Hoogvliet',
+            name: t('hoogvliet'),
             active: true,
-            description: 'Dagelijks actief in Hoogvliet voor CV-ketel onderhoud, verstoppingen en badkamer renovaties.'
+            description: t('hoogvliet_desc')
         },
         {
             id: 'hellevoetsluis',
-            name: 'Hellevoetsluis',
+            name: t('hellevoetsluis'),
             active: true,
-            description: 'Van de vesting tot de nieuwbouw, wij kennen de woningen en leidingnetwerken in Hellevoetsluis.'
+            description: t('hellevoetsluis_desc')
         },
         {
             id: 'rockanje',
-            name: 'Rockanje',
+            name: t('rockanje'),
             active: true,
-            description: 'Ook voor recreatiewoningen en vaste bewoners in Rockanje staan wij klaar met vakkundige service.'
+            description: t('rockanje_desc')
         },
         {
             id: 'brielle',
-            name: 'Brielle',
+            name: t('brielle'),
             active: true,
-            description: 'Specialist in het renoveren van sanitair en leidingwerk in de historische panden van Brielle.'
+            description: t('brielle_desc')
         },
         {
             id: 'rozenburg',
-            name: 'Rozenburg',
+            name: t('rozenburg'),
             active: true,
-            description: 'Snelle service via de Calandbrug of tunnel. Wij helpen u bij lekkage en verstopping.'
+            description: t('rozenburg_desc')
+        },
+        {
+            id: 'heenvliet',
+            name: t('heenvliet'),
+            active: true,
+            description: t('heenvliet_desc')
+        },
+        {
+            id: 'rhoon',
+            name: t('rhoon'),
+            active: true,
+            description: t('rhoon_desc')
+        },
+        {
+            id: 'poortugaal',
+            name: t('poortugaal'),
+            active: true,
+            description: t('poortugaal_desc')
+        },
+        {
+            id: 'geervliet',
+            name: t('geervliet'),
+            active: true,
+            description: t('geervliet_desc')
         }
     ];
 

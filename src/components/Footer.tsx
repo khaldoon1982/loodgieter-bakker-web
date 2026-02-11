@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
-import { Mail, MapPin, Phone, ShieldCheck, ArrowRight, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Phone, ShieldCheck, ArrowRight, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
     const tServices = useTranslations('Services');
     const tNav = useTranslations('Navigation');
 
-    const areas = ['spijkenisse', 'hoogvliet', 'hellevoetsluis', 'rockanje', 'brielle'];
+    const areas = ['spijkenisse', 'hoogvliet', 'hellevoetsluis', 'rockanje', 'brielle', 'rozenburg', 'heenvliet', 'rhoon', 'poortugaal', 'geervliet'];
     const services = ['leak', 'clog', 'sanitary', 'pipes', 'maintenance'];
 
     return (
@@ -46,9 +46,10 @@ export default function Footer() {
                         </p>
 
                         <div className="flex gap-4 pt-2">
-                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-500 transition-all duration-300 shadow-lg shadow-black/20" aria-label="Facebook"><Facebook size={18} /></a>
-                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-pink-600 hover:border-pink-500 transition-all duration-300 shadow-lg shadow-black/20" aria-label="Instagram"><Instagram size={18} /></a>
-                            <a href="#" className="p-2.5 bg-slate-900 rounded-xl border border-white/5 text-slate-400 hover:text-white hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 shadow-lg shadow-black/20" aria-label="LinkedIn"><Linkedin size={18} /></a>
+                            <a href="https://wa.me/31640755336" target="_blank" rel="noopener noreferrer" className="p-2.5 bg-green-600 rounded-xl border border-green-500 text-white hover:bg-green-500 hover:border-green-400 transition-all duration-300 shadow-lg shadow-green-900/20 flex items-center gap-2 pr-4" aria-label="WhatsApp">
+                                <MessageCircle size={18} />
+                                <span className="text-sm font-bold">WhatsApp: 0640755336</span>
+                            </a>
                         </div>
                     </div>
 

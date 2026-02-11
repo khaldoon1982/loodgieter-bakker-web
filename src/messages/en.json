@@ -29,7 +29,22 @@
         "hoogvliet": "Hoogvliet",
         "hellevoetsluis": "Hellevoetsluis",
         "rockanje": "Rockanje",
-        "brielle": "Brielle"
+        "brielle": "Brielle",
+        "heenvliet": "Heenvliet",
+        "rhoon": "Rhoon",
+        "poortugaal": "Poortugaal",
+        "geervliet": "Geervliet",
+        "rozenburg": "Rozenburg",
+        "spijkenisse_desc": "Our home base. We are often on site within 30 minutes for all plumbing work.",
+        "hoogvliet_desc": "Active daily in Hoogvliet for boiler maintenance, clogs, and bathroom renovations.",
+        "hellevoetsluis_desc": "From the fortress to new builds, we know the pipe networks in Hellevoetsluis.",
+        "rockanje_desc": "Ready for holiday homes and permanent residents in Rockanje with professional service.",
+        "brielle_desc": "Specialist in renovating sanitary and piping in the historic buildings of Brielle.",
+        "heenvliet_desc": "Also in historic Heenvliet we are ready with professional plumbing and maintenance.",
+        "rhoon_desc": "From Rhoon-Dorp to Portland, we quickly fix leaks or heating issues in the region.",
+        "poortugaal_desc": "Living in Poortugaal? Call us for professional installation and repair.",
+        "geervliet_desc": "Direct service in Geervliet. We are quickly on site for all your plumbing jobs.",
+        "rozenburg_desc": "Fast service via the Calandbrug or tunnel. We help with leaks and clogs."
     },
     "Reviews": {
         "title": "What customers say"
